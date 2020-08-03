@@ -19,7 +19,7 @@ router.post('/', (req, res) => {
 
 function insertRecord(req, res) {
     var job = new Jobs();
-    job. = req.body.jobTitle;
+    job.jobTitle = req.body.jobTitle;
     job.jobDescription = req.body.jobDescription;
     job.jobKeywords = req.body.jobKeywords;
     job.jobLocation = req.body.jobLocation;

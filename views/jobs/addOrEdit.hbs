@@ -1,0 +1,31 @@
+<h3>{{viewTitle}}</h3>
+
+<form action="/jobs" method="POST" autocomplete="off">
+    <input type="hidden" name="_id" value="{{jobs._id}}">
+    <div class="form-group">
+        <label>Job Title</label>
+        <input type="text" class="form-control" name="jobTitle" placeholder="Job Title" value="{{job.jobTitle}}">
+        <div class="text-danger">
+            {{job.jobTileError}}</div>
+    </div>
+    <div class="form-group">
+        <label>Description</label>
+        <input type="text" class="form-control" name="description" placeholder="descritption" value="{{job.jobDescription}}">
+        <div class="text-danger">
+            {{job.jobDescriptionError}}</div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Keywords</label>
+            <input type="text" class="form-control" name="keywors" placeholder="keywords" value="{{job.jobKeywords}}">
+        </div>
+        <div class="form-group col-md-6">
+            <label>Location</label>
+            <input type="text" class="form-control" name="Location" placeholder="Location" value="{{job.jobLocation }}">
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+        <a class="btn btn-secondary" href="/jobs/list"><i class="fa fa-list-alt"></i> View All</a>
+    </div>
+</form>
