@@ -1,4 +1,8 @@
-var Item = require('../models/item');
+const Jobs = require('../models/jobs')
+
+//show the list of jobs
+const 
+
 // CRUD CREATE item
 exports.createItem = function(req, res) { 
     var newItem = new Item(req.body);
